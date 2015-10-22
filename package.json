@@ -1,0 +1,26 @@
+{
+  "name": "classical",
+  "version": "1.0.0",
+  "description": "a classical music streaming service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "daniel-leibovic",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.7.0",
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "cookie-parser": "^1.4.0",
+    "express": "^4.13.3",
+    "history": "^1.12.5",
+    "react": "^0.14.0",
+    "react-bootstrap": "^0.27.2",
+    "react-dom": "^0.14.0",
+    "react-router": "^1.0.0-rc3",
+    "request": "^2.65.0",
+    "webpack": "^1.12.2"
+  }
+}
