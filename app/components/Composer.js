@@ -9,6 +9,7 @@ class Composer extends React.Component {
 				paddingTop: '70px',
 			},
 		}
+		//GET ALL THE TYPES
 		var composer = this.props.params.composer
 		return (
 			<div className="container" style={styles.main}>

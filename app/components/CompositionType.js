@@ -18,7 +18,6 @@ class CompositionType extends React.Component {
 		return (
 			<div className={ classes.column } style = {styles.main}>
 	  			<p><a href={href} className="btn btn-success">{this.props.name}</a></p>
-
 	  		</div>
 		)
 	}

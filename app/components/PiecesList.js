@@ -10,21 +10,45 @@ class PiecesList extends React.Component {
 	  			paddingTop: '70px',
 	  		},
 	  	}
-	  	var href = "/#/".concat(this.props.params.composer).concat("/").concat(this.props.params.compositionType).concat("/Symphony 1")
+	  	//GET LIST OF PIECES
+	  	//COMPOSER, TYPE
+	  	var data = [
+	  		{pieceName: "Symphony 1"},
+	  		{pieceName: "Symphony 2"},
+	  		{pieceName: "blah"}
+	  	];
+
+  		var count = 0;
+	  	var pieces = data.map(function(piece) {
+	  		return (
+	  			<Piece 	pieceName={piece.pieceName}
+	  					params={this.props.params}
+	  					key={count++} />
+	  		)
+	  	}, this)
 		return(
 			<div className="container" style={ styles.main }>
-		      <ListGroup>
-			    <ListGroupItem href={ href }>Symphony 1</ListGroupItem>
-			    <ListGroupItem href={ href }>Symphony 2</ListGroupItem>
-			    <ListGroupItem href={ href }>Symphony 3</ListGroupItem>
-			    <ListGroupItem href={ href }>Symphony 4</ListGroupItem>
-			    <ListGroupItem href={ href }>Symphony 5</ListGroupItem>
-			    <ListGroupItem href={ href }>Symphony 6</ListGroupItem>
-			    
-			  </ListGroup>
-		      
+		      	<ListGroup>
+			      	{pieces}
+			    </ListGroup>
 		    </div>
 		)
+	}
+}
+
+
+class Piece extends React.Component {
+	render() {
+	  	var href = "/#/".concat(this.props.params.composer)
+	  					.concat("/")
+	  					.concat(this.props.params.compositionType)
+	  					.concat("/")
+	  					.concat(this.props.pieceName)
+		return (
+			<div className="piece">
+			    <ListGroupItem href={ href }>{this.props.pieceName}</ListGroupItem>
+			</div>
+		);
 	}
 }
 
