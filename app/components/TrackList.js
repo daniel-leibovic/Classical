@@ -16,10 +16,11 @@ class TrackList extends React.Component {
 	  		}
 	  	}
 	  	var data = [
-	  		{URL: "72R8TpLB7bReDrr29vD39h"},
-	  		{URL: "0RK5JNTueTTyTTL6iMmyjj"},
-	  		{URL: "66xhCGhFAiUh50S6LjRvcs"},
-	  		{URL: "66xhCGhFAiUh50S6LjRvcs"},
+	  		{URL: "4b0u2Q0qzmc98O9TSsWiQ9"},
+	  		{URL: "7p6ocvsxC2IZpFmP2EJrA2"},
+	  		{URL: "268YzbymM01WLTu86qOECq"},
+	  		{URL: "0NemBSBw54olsRuZx1GANZ"},
+	  		{URL: "6OJZkSj1dozSzXAFslYGQi"}
 	  	];
 
   		var count = 0;
@@ -32,12 +33,13 @@ class TrackList extends React.Component {
 	  	}, this)
 		return(
 			<div className="container" style={ styles.main }>
+				<h1>{this.props.params.composer} {this.props.params.composition} by {this.props.params.recording} </h1>
 				<div className="tracks">
 			    	{tracks}
 			    </div>
 			    <div className="album">
 			    	<h1>ALBUM:</h1>
-				    <iframe src="https://embed.spotify.com/?uri=spotify:album:2YVtVvALIC487bj4UGGxpQ" width="640" height="720" frameborder="0" allowtransparency="true"></iframe>
+				    <iframe src="https://embed.spotify.com/?uri=spotify:album:5kIIc3angUHXtDvh5Uw4au" width="640" height="720" frameborder="0" allowtransparency="true"></iframe>
 			    </div>
 		    </div>
 		)

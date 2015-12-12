@@ -13,6 +13,7 @@ class Composer extends React.Component {
 		var composer = this.props.params.composer
 		return (
 			<div className="container" style={styles.main}>
+		      	<h1>{this.props.params.composer}</h1>
 		      	<div className="row">
 		      		<CompositionType name={"Symphonies"} 
 		      						composer={composer}/>

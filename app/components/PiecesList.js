@@ -15,7 +15,13 @@ class PiecesList extends React.Component {
 	  	var data = [
 	  		{pieceName: "Symphony 1"},
 	  		{pieceName: "Symphony 2"},
-	  		{pieceName: "blah"}
+	  		{pieceName: "Symphony 3"},
+	  		{pieceName: "Symphony 4"},
+	  		{pieceName: "Symphony 5"},
+	  		{pieceName: "Symphony 6"},
+	  		{pieceName: "Symphony 7"},
+	  		{pieceName: "Symphony 8"},
+	  		{pieceName: "Symphony 9"}
 	  	];
 
   		var count = 0;
@@ -28,6 +34,7 @@ class PiecesList extends React.Component {
 	  	}, this)
 		return(
 			<div className="container" style={ styles.main }>
+		      	<h1>{this.props.params.composer} {this.props.params.compositionType} </h1>
 		      	<ListGroup>
 			      	{pieces}
 			    </ListGroup>

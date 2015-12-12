@@ -26,6 +26,7 @@ class RecordingList extends React.Component {
 
 		return(
 			<div className="container" style={ styles.main }>
+		     	<h1>{this.props.params.composer} {this.props.params.composition}</h1>
 		     	<ListGroup>
 		     		{recordings}
 				</ListGroup>
